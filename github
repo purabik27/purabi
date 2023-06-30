@@ -1,0 +1,16 @@
+CREATE TABLE github(
+Year_ INT PRIMARY KEY,
+No_of_Developers_in_millions DECIMAL(10,2),
+No_of_Repositories_in_millions DECIMAL(10,2),
+No_of_organizations_in_millions DECIMAL(10,2)
+);
+
+DESCRIBE github;
+DROP TABLE github;
+INSERT INTO github VALUES(2016,5.8,19.4,0.33);
+INSERT INTO github VALUES(2017,24,67,1.5);
+INSERT INTO github VALUES(2018,31,96,2.1);
+INSERT INTO github VALUES(2019,40,44,2.9);
+INSERT INTO github VALUES(2020,56,60,null);
+INSERT INTO github VALUES(2022,94,200,null);
+SELECT * FROM github;
